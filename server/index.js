@@ -20,7 +20,7 @@ massive({
 })
 
 // app.get('/api/posts', controller.get_All_Posts)
-app.post('/api/add_User', controller.add_User)
+app.post('/api/add_User', controller.register)
 // app.post('/api/add_post', controller.add_post)
 // app.put('/api/update_posts/:id', controller.update_Post)
 // app.delete('/api/delete_posts/:id', controller.delete_Post)

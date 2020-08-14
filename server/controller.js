@@ -15,6 +15,7 @@ module.exports = {
             userId: newUser.user_id,
             username: newUser.username
         }
+    {() =>this.props.history.push("/dashboard")}
         res.status(200).send(req.session.user)
     }
 }
