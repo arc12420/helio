@@ -51,6 +51,17 @@ module.exports = {
         req.session.destroy();
         res.sendStatus(200);
     },
+    addPost: (req,res) => {
+        const dbInstance = req.app.get('db');
+        const {title, img, content, author_id} = req.body;
+
+        dbInstance.add_post([title, img, content, author_id])
+        .then(() => res.sendStatus(200))
+        .catch(err => {
+          res.status(500).send({ errorMessage: "Oops! Something went wrong. Our engineers have been informed!" });
+          console.log(err)
+        });
+    },
 }
 
 

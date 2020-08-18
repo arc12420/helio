@@ -27,7 +27,7 @@ class Form extends Component {
       
     savePost = () => {
         axios
-          .put(`/api/products/${this.props.match.params.id}`, { ...this.state })
+          .put(`/api/add_post/${this.props.match.params.id}`, { ...this.state })
           .then((res) => {
             this.props.history.push("/");
           });
@@ -51,6 +51,7 @@ class Form extends Component {
         )
     }
 };
+
 
 
 export default Form

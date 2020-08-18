@@ -32,7 +32,7 @@ app.post('/api/add_User', controller.register)
 app.post('/api/login_User', controller.login)
 app.get('/api/logout', controller.logout)
 app.get('/api/user', controller.user)
-// app.post('/api/add_post', controller.add_post)
+app.post('/api/add_post', controller.addPost)
 // app.put('/api/update_posts/:id', controller.update_Post)
 // app.delete('/api/delete_posts/:id', controller.delete_Post)
 
