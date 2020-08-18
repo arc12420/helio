@@ -3,6 +3,7 @@ import './App.css';
 import Nav from './Components/Nav/Nav';
 import routes from './routes';
 import {withRouter} from 'react-router-dom';
+import "./Components/Nav/Nav.css";
 
 
 
