@@ -27,14 +27,14 @@ massive({
     console.log(`Database is connected`)
 })
 
-// app.get('/api/posts', controller.get_All_Posts)
+app.get('/api/posts', controller.get_All_Posts)
 app.post('/api/add_User', controller.register)
 app.post('/api/login_User', controller.login)
 app.get('/api/logout', controller.logout)
 app.get('/api/user', controller.user)
-app.post('/api/add_post', controller.addPost)
+app.post('/api/add_post/:id', controller.addPost)
 // app.put('/api/update_posts/:id', controller.update_Post)
-// app.delete('/api/delete_posts/:id', controller.delete_Post)
+app.delete('/api/delete_post/:id', controller.delete_Post)
 
 
 app.listen(SERVER_PORT, () => console.log(`Hey, Ya'll have connected to that port up yonder called port ${SERVER_PORT}. `))

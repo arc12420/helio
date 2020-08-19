@@ -1,14 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
+import {withRouter} from 'react-router-dom';
 
-class Post extends Component {
-    render(){
+function Post (props){
         return(
-            <div>
-                Post Component
+            <div className="singlePost">
+                <img src={props.posts.img} alt="uploadedImage"/>
+               {props.posts.content}
+               <button className="buttons" onClick ={() => props.dlt(props.posts.id)}> Delete </button>
             </div>
         )
-    }
+    
 };
 
 
-export default Post
+export default withRouter(Post);

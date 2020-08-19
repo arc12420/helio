@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import axios from"axios";
+import { connect } from 'react-redux';
+
 
 class Form extends Component {
     constructor() {
@@ -7,8 +9,7 @@ class Form extends Component {
         this.state = {
           title: "",
           img: "",
-          content: "",
-          author_id: ""
+          content: ""
         };
       }
 
@@ -26,19 +27,20 @@ class Form extends Component {
 
       
     savePost = () => {
+        console.log(this.props)
         axios
-          .put(`/api/add_post/${this.props.match.params.id}`, { ...this.state })
+          .post(`/api/add_post/${this.props.user.userId}`, { ...this.state })
           .then((res) => {
-            this.props.history.push("/");
+            this.props.history.push("/dashboard");
           });
       };
-
+ 
     render(){
         return(
             <div className="newPostMain">
                 Title:
                 <input onChange={(event) => this.handleTitle(event.target.value)} />
-                <img/>
+                {/* <img/> */}
                 Image URL:
                 <input onChange={(event) => this.handleImg(event.target.value)} />
                 Content:
@@ -54,4 +56,6 @@ class Form extends Component {
 
 
 
-export default Form
+const mapStateToProps = state => state;
+
+export default connect(mapStateToProps)(Form);
