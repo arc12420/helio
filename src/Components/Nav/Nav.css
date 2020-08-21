@@ -17,8 +17,11 @@ nav{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     width: 100px;
-    margin-left: 20px;
+    height: 125px;
+    justify-content: space-evenly;
+    margin-top: 20px;
 }
 img{
     height: 50px;
@@ -42,14 +45,15 @@ img{
       0 10px 10px 0 rgba(0, 0, 0, 0.26);
 }
 ul{
-    height: 75vh;
-    width: 90px;
-    margin-left: 10px;
-    padding: 0PX;
+    height: 100vh;
+    width: 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
+    /* justify-content: flex-end; */
 }
 .homeAndPostButtons{
     display: flex;
@@ -63,4 +67,5 @@ ul{
     height: 10vh;
     display: flex;
     align-items: flex-end;
+    margin-bottom: 20px;
 }

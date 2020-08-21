@@ -37,13 +37,13 @@ class Form extends Component {
     return (
       <div className="newPostMain">
         Title:
-        <input onChange={(event) => this.handleTitle(event.target.value)} />
+        <input onChange={(event) => this.handleTitle(event.target.value)} placeholder="Title" />
         {/* <img/> */}
         Image URL:
-        <input onChange={(event) => this.handleImg(event.target.value)} />
+        <input onChange={(event) => this.handleImg(event.target.value)} placeholder="Image URL" />
         Content:
         <input
-          onChange={(event) => this.handleContent(event.target.value)}
+          onChange={(event) => this.handleContent(event.target.value)} placeholder="Post"
           className="newPostContent"
         />
         <div className="postBox">

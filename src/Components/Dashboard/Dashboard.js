@@ -28,16 +28,25 @@ class Dashboard extends Component {
   render() {
     const arr = this.state.posts.map((element, index) => {
       return (
-
-          <body>
-              <div className="searchBox">Search bar</div>
+                       
         <div className="pstbx">
           <Post className="postComp" posts={element} dlt={this.dlt} />        
         </div>
-        </body>
+        
       );
     });
-    return <div>{arr}</div>;
+    return <div className="dashboardAll">
+        <div className="searchBox">
+          <input className="searchInput" ></input>
+          <button>Search</button>
+        </div>
+        <div className="allComments">
+        <body> 
+          {arr}
+          </body>
+        </div>
+      </div>;
+      
   }
 }
 

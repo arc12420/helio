@@ -8,6 +8,7 @@ import "./Components/Dashboard/Dashboard.css";
 import "./Components/Form/Form.css";
 import "./Components/Nav/Nav.css";
 import "./Components/Post/Post.css";
+import "./reset.css"
 
 function App(props) {
   console.log(props.location);

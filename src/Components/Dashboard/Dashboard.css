@@ -1,28 +1,73 @@
+.dashboardAll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    overflow: scroll; 
+}
 .searchBox{
     width:60vw;
     height: 40px;
     background-color: rgb(255, 255, 255);
     color: black;
+    margin-bottom: 20px;
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+    padding: 20px; 
 }
-.pstbx{
+.searchInput{
+    width: 30vw;
+    margin-left: 10px;
+}
+.allComments{
+    min-height: 100px;
+    width: 60vw;
+    height: auto;
+    background-color: white;
+    color:black;
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    width:60vw;
-    height: 80px;
-    color: black;
+    align-content: center;
+    flex-direction: column;        
+    padding: 20px;
+    overflow: auto; 
 }
+
 body{
-    /* margin-top: 20vh; */
-    height:130px;
-    width:70vw;
-    margin-left: 200px;
-    background-color: #eeeeee;
+    min-height: min-content;
+    width:60vw;
+    height: auto;
+    background-color: white;
+    color:black;
+    padding: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    
+    justify-content: center;
+    align-items: center;
+    overflow: auto; 
+}
+
+.pstbx{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width:50vw;
+    min-height: 100px;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -4,12 +4,25 @@ import { withRouter } from "react-router-dom";
 function Post(props) {
   return (
     <div className="singlePost">
-      <img src={props.posts.img} alt="uploadedImage" />
-      {props.posts.content}
-      <button className="buttons" onClick={() => props.dlt(props.posts.id)}>
+      <div className="title">
+        {props.posts.title}
+      </div>
+      <div className="imageAndContentAndDelete">
+      <div className="imageAndContent">
+        <div className="image">
+          <img src={props.posts.img} alt="uploadedImage" />
+        </div>
+        <div className="thePost">
+          {props.posts.content}
+        </div>
+      </div>
+      <div className="deletePostButton">
+        <button className="buttons" onClick={() => props.dlt(props.posts.id)}>
         {" "}
         Delete{" "}
-      </button>
+        </button>
+      </div>
+      </div>
     </div>
   );
 }
