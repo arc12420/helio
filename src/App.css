@@ -1,44 +1,35 @@
-.App {  
-  min-height: 100vh;
+.app {
+  height: 100vh;
   width: 100vw;
-  text-align: center;
-  background-color: #282c34;
+  background-color: #eeeeee;
+  color: white;
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;  
+}
+button{
+  border-radius: 1px;
+  background-image: radial-gradient(circle at 50% -46%, #737373, #403d39);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   
 }
-
-.singlePost{
-  height: 100px;
-  width: 60vw;
-  margin: 20px;
-
-}
-
-
-#Nav{  
+.appHeader{
   width: 100px;
   height: 100vh;
+  display: flex;
+  flex-direction: row;
   position: fixed;
-  min-height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  top: 0;
+  left: 0;
+  padding-top: 20px;
   color: white;
-  
+  background-image: -webkit-linear-gradient(bottom, #ff7abe, #ff9770);
+  background-image: -o-linear-gradient(bottom, #ff7abe, #ff9770);
+  background-image: linear-gradient(0deg, #ff7abe, #ff9770);
+  -webkit-box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.1), 5px 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 0 20px 0 rgba(0, 0, 0, 0.1), 5px 0 5px rgba(0, 0, 0, 0.2);
 }
-.pstbx{
-  display: flex;
-  justify-content: center;
-  width: 60vw;
-  background-color: white;
-  border: gray;
-
-
-}
-
-

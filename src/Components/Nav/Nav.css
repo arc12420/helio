@@ -1,0 +1,66 @@
+nav{
+  max-width: 100px;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sideHeader{
+  width: 100px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.userInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100px;
+    margin-left: 20px;
+}
+img{
+    height: 50px;
+    width: 50px;    
+}
+.homeBtn{
+    padding: 15px;
+}
+.newPostBtn{
+    padding: 15px;
+}
+.logoutBtn{
+    padding: 15px;
+}
+.userImage{
+    height: 75px;
+    width: 75px; 
+    border-radius: 50px;
+    background-color: #ffd670;
+    box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.25),
+      0 10px 10px 0 rgba(0, 0, 0, 0.26);
+}
+ul{
+    height: 75vh;
+    width: 90px;
+    margin-left: 10px;
+    padding: 0PX;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.homeAndPostButtons{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+
+}
+.logouts{
+    height: 10vh;
+    display: flex;
+    align-items: flex-end;
+}

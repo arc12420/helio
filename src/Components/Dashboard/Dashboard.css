@@ -1,0 +1,28 @@
+.searchBox{
+    width:60vw;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.pstbx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width:60vw;
+    height: 80px;
+    color: black;
+}
+body{
+    /* margin-top: 20vh; */
+    height:130px;
+    width:70vw;
+    margin-left: 200px;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}

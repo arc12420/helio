@@ -1,0 +1,108 @@
+.contentBoxAuth {
+  display: flex;
+  height: 250px;
+  width: 250px;
+}
+.authPage {
+  width: 100vw;
+  height: 100vh;
+  background-image: -webkit-linear-gradient(
+    351deg,
+    #ff70a6,
+    #ff9770 40%,
+    #ffd670 73%,
+    #e9ff70
+  );
+  background-image: -o-linear-gradient(
+    351deg,
+    #ff70a6,
+    #ff9770 40%,
+    #ffd670 73%,
+    #e9ff70
+  );
+  background-image: linear-gradient(
+    99deg,
+    #ff70a6,
+    #ff9770 40%,
+    #ffd670 73%,
+    #e9ff70
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+}
+.contentBoxAuth {
+  border-radius: 8px;
+  -webkit-box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.25),
+    0 10px 10px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.25),
+    0 10px 10px 0 rgba(0, 0, 0, 0.26);
+  background-image: -webkit-linear-gradient(353deg, #ff7a6e, #ffd670);
+  background-image: -o-linear-gradient(353deg, #ff7a6e, #ffd670);
+  background-image: linear-gradient(97deg, #ff7a6e, #ffd670);
+  width: 35vw;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.authentication {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 700;
+  max-height: 50vh;
+}
+h5 {
+  display: flex;
+  justify-content: center;
+  height: 75px;
+  font-size: 100px;
+  margin: 10px;
+}
+.logo {
+  height: 150px;
+  width: 150px;
+}
+.authButtonContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100px;
+  width: 250px;
+  margin: 20px;
+}
+.inputAuth {
+  margin: 10px;
+  padding: 10px;
+}
+.uSetupBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.pSetupBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
